@@ -23,9 +23,7 @@ export default function Header(){
           <li>
           <Link to='todolist'  className="hover:underline hover:text-blue-900">ToDo-list</Link>
         </li>
-          <li>
-          <Link to='theme'  className="hover:underline hover:text-blue-900">Theme</Link>
-        </li>
+        
       </ul> 
     </div>
      <Outlet />

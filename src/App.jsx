@@ -7,7 +7,6 @@ import InpuTextt from './Input-Text'
 import Home from './Home'
 import ArrayTabs from './arraytabs'
 import TodoList from './Todolist'
-import { Theme } from './Theme'
 
 function App() {
 
@@ -21,7 +20,6 @@ function App() {
           <Route path="/array-tabs" element={<ArrayTabs />} />
           <Route path="/input-text" element={<InpuTextt />} />
           <Route path="/todolist" element={<TodoList />} />
-          <Route path="/theme" element={<Theme />} />
         </Route>
      </Routes>
     </>
