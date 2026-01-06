@@ -9,9 +9,7 @@ export default function FetchLoaderAPI() {
   const [loading, setLoading] = useState(false);
   const [hasFetched, setHasFetched]=useState(false)
 
-  useEffect(() => {
-    getUsers();
-  }, []);
+ 
 
   async function getUsers() {
     if(hasFetched) return;
@@ -30,11 +28,14 @@ export default function FetchLoaderAPI() {
         setLoading(false)
     }
   }
+   useEffect(() => {
+    getUsers();
+  }, []);
 
   return (
     <>
   
-      <button onClick={getUsers} disabled={loading || hasFetched}   className="
+      {/* <button onClick={getUsers} disabled={loading || hasFetched}   className="
     border px-5 py-4 text-white cursor-pointer
     bg-blue-600
     disabled:bg-gray-400
@@ -42,7 +43,7 @@ export default function FetchLoaderAPI() {
     transition-colors duration-200
   ">
       {hasFetched?"Fetched":"Fetch Users"}
-      </button>
+      </button> */}
 
       <table>
         <thead>
